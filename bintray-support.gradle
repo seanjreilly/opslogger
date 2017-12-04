@@ -17,7 +17,7 @@ artifacts {
     archives sourcesJar, javadocJar
 }
 
-task createPom << {
+task createPom doLast {
     pom {
         artifactId = project.archivesBaseName
         project {
